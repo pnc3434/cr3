@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная - Портфолио</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<body class="bg-light">
+<body>
     <div class="container-fluid p-0">
         <header class="bg-primary text-white py-4">
             <div class="container">
@@ -61,7 +60,11 @@
                     <div class="card-body p-4">
                         <div class="row align-items-center">
                             <div class="col-md-3 text-center mb-3 mb-md-0">
-                                <img src="images/photo1.jpg" alt="Фото студента" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+                                <picture>
+                                    <source srcset="images/photo1.webp" type="image/webp">
+                                    <source srcset="images/photo1.jpg" type="image/jpeg">
+                                    <img src="images/photo1.jpg" alt="Фото студента" class="rounded-circle profile-img">
+                                </picture>
                             </div>
                             <div class="col-md-9">
                                 <h2 class="card-title h4 text-primary">Жуков Максим Максимович</h2>
@@ -174,9 +177,15 @@
                     <div class="card-body">
                         <div class="row g-3">
                             <div class="col-md-4">
-                                <div class="card h-100">
-                                    <img src="images/photomy.jpg" class="card-img-top" alt="Личный сайт"
-                                        style="height: 150px; object-fit: cover;">
+                                <div class="card h-100 project-card">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="images/photomy-large.webp" type="image/webp">
+                                        <source media="(min-width: 768px)" srcset="images/photomy-medium.webp" type="image/webp">
+                                        <source media="(min-width: 1200px)" srcset="images/photomy-large.jpg">
+                                        <source media="(min-width: 768px)" srcset="images/photomy-medium.jpg">
+                                        <source srcset="images/photomy.webp" type="image/webp">
+                                        <img src="images/photomy.jpg" class="card-img-top project-img" alt="Личный сайт" loading="lazy">
+                                    </picture>
                                     <div class="card-body">
                                         <h5 class="card-title">Личный сайт</h5>
                                         <p class="card-text small text-muted">
@@ -192,9 +201,12 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="card h-100">
-                                    <img src="images/photopril.jpg" class="card-img-top" alt="Todo приложение"
-                                        style="height: 150px; object-fit: cover;">
+                                <div class="card h-100 project-card">
+                                    <picture>
+                                        <source srcset="images/photopril.webp, images/photopril@2x.webp 2x" type="image/webp">
+                                        <source srcset="images/photopril.jpg, images/photopril@2x.jpg 2x" type="image/jpeg">
+                                        <img src="images/photopril.jpg" class="card-img-top project-img" alt="Todo приложение" loading="lazy">
+                                    </picture>
                                     <div class="card-body">
                                         <h5 class="card-title">Clash Royale</h5>
                                         <p class="card-text small text-muted">
@@ -208,9 +220,11 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="card h-100">
-                                    <img src="images/photomag.jpg" class="card-img-top" alt="Интернет-магазин"
-                                        style="height: 150px; object-fit: cover;">
+                                <div class="card h-100 project-card">
+                                    <picture>
+                                        <source srcset="images/photomag.webp" type="image/webp">
+                                        <img src="images/photomag.jpg" class="card-img-top project-img" alt="Интернет-магазин" loading="lazy">
+                                    </picture>
                                     <div class="card-body">
                                         <h5 class="card-title">Интернет-магазин</h5>
                                         <p class="card-text small text-muted">
@@ -229,7 +243,6 @@
                 </div>
             </section>
         </main>
-        <!-- Footer -->
         <footer class="bg-dark text-white py-4 mt-5">
             <div class="container">
                 <div class="row align-items-center">
@@ -246,5 +259,4 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

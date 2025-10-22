@@ -1,33 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дневник - Портфолио</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <style>
-        .progress {
-            height: 10px;
-        }
-
-        .diary-item {
-            border-left: 3px solid #0d6efd;
-            padding-left: 1rem;
-        }
-
-        .status-completed {
-            color: #198754;
-        }
-
-        .status-in-progress {
-            color: #db0505;
-        }
-    </style>
+    <link rel="stylesheet" href="../style.css">
 </head>
-
-<body class="bg-light">
+<body>
     <div class="container-fluid p-0">
         <header class="bg-primary text-white py-4">
             <div class="container">
@@ -87,52 +68,86 @@
                         </div>
                         <div class="card-body">
                             <div class="diary-item mb-4">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <div>
-                                        <h6 class="mb-1">15 дек - Верстка макета сайта</h6>
-                                        <p class="text-muted small mb-0">Завершена верстка главной страницы портфолио
-                                        </p>
+                                <div class="row align-items-center">
+                                    <div class="col-md-2 mb-3 mb-md-0 text-center">
+                                        <div class="diary-icon">
+                                            <i class="bi bi-code-slash"></i>
+                                        </div>
                                     </div>
-                                    <span class="status-completed">
-                                        <i class="bi bi-check-circle-fill"></i> Выполнено
-                                    </span>
+                                    <div class="col-md-10">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div>
+                                                <h6 class="mb-1">15 дек - Верстка макета сайта</h6>
+                                                <p class="text-muted small mb-0">Завершена верстка главной страницы портфолио с использованием адаптивных изображений и современных техник CSS</p>
+                                            </div>
+                                            <span class="status-completed">
+                                                <i class="bi bi-check-circle-fill"></i> Выполнено
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="diary-item mb-4">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <div>
-                                        <h6 class="mb-1">10 дек - JavaScript основы</h6>
-                                        <p class="text-muted small mb-0">Изучены базовые конструкции языка</p>
+                                <div class="row align-items-center">
+                                    <div class="col-md-2 mb-3 mb-md-0 text-center">
+                                        <div class="diary-icon">
+                                            <i class="bi bi-filetype-js"></i>
+                                        </div>
                                     </div>
-                                    <span class="status-completed">
-                                        <i class="bi bi-check-circle-fill"></i> Выполнено
-                                    </span>
+                                    <div class="col-md-10">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div>
+                                                <h6 class="mb-1">10 дек - JavaScript основы</h6>
+                                                <p class="text-muted small mb-0">Изучены базовые конструкции языка, работа с DOM и событиями</p>
+                                            </div>
+                                            <span class="status-completed">
+                                                <i class="bi bi-check-circle-fill"></i> Выполнено
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="diary-item mb-4">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <div>
-                                        <h6 class="mb-1">05 дек - Работа с формами</h6>
-                                        <p class="text-muted small mb-0">Создание и валидация контактной формы</p>
+                                <div class="row align-items-center">
+                                    <div class="col-md-2 mb-3 mb-md-0 text-center">
+                                        <div class="diary-icon">
+                                            <i class="bi bi-input-cursor-text"></i>
+                                        </div>
                                     </div>
-                                    <span class="status-in-progress">
-                                        <i class="bi bi-arrow-repeat"></i> В процессе
-                                    </span>
+                                    <div class="col-md-10">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div>
+                                                <h6 class="mb-1">05 дек - Работа с формами</h6>
+                                                <p class="text-muted small mb-0">Создание и валидация контактной формы с адаптивным дизайном</p>
+                                            </div>
+                                            <span class="status-in-progress">
+                                                <i class="bi bi-arrow-repeat"></i> В процессе
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="diary-item">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <div>
-                                        <h6 class="mb-1">01 дек - Адаптивный дизайн</h6>
-                                        <p class="text-muted small mb-0">Изучение медиа-запросов и адаптивной верстки
-                                        </p>
+                                <div class="row align-items-center">
+                                    <div class="col-md-2 mb-3 mb-md-0 text-center">
+                                        <div class="diary-icon">
+                                            <i class="bi bi-phone"></i>
+                                        </div>
                                     </div>
-                                    <span class="status-in-progress">
-                                        <i class="bi bi-arrow-repeat"></i> В процессе
-                                    </span>
+                                    <div class="col-md-10">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div>
+                                                <h6 class="mb-1">01 дек - Адаптивный дизайн</h6>
+                                                <p class="text-muted small mb-0">Изучение медиа-запросов и адаптивной верстки для мобильных устройств</p>
+                                            </div>
+                                            <span class="status-in-progress">
+                                                <i class="bi bi-arrow-repeat"></i> В процессе
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -182,7 +197,10 @@
 
                     <div class="card shadow-sm mt-4">
                         <div class="card-body text-center">
-                            <button class="btn btn-primary" onclick="alert('Ошибка: не работает')">
+                            <div class="diary-icon mx-auto mb-3">
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+                            <button class="btn btn-primary" onclick="alert('Функция добавления записи будет реализована в следующем обновлении')">
                                 <i class="bi bi-plus-circle me-2"></i>Добавить запись
                             </button>
                         </div>
@@ -208,5 +226,4 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
